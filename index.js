@@ -1,4 +1,7 @@
-prerender = require('./lib/prerender');
+'use strict';
+
+var newRelic = require('newrelic'),
+	prerender = require('./lib/prerender');
 
 // prerender.use(require('./lib/plugins/whitelist'));
 prerender.use(require('./lib/plugins/blacklist'));
